@@ -1,0 +1,309 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Playfair+Display:wght@400;500&display=swap');
+
+:root { /* é assim que se trabalha com variáveis no css*/
+    --cor0: #2E86B3;
+    --cor1: #36BBFF;
+    --cor2: #FFCD29;
+    --cor3: #4F0BB3;
+    --cor4: #781CFF;
+    --cor5: rgba(0, 0, 0, 0.596);
+
+
+    --fonte-padrão: 'Playfair Display', serif, cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+button{
+    margin: auto;
+    font-family: var(--fonte-padrão);
+    border: none;
+    font-weight: bolder;
+    color: #4F0BB3;
+    border-radius: 5px;
+    background-color: #9f9494;
+    padding: 5px;
+}
+
+#idioma:hover{
+    background-color: #771cff80;
+    transition-duration: 0.5s;
+   
+}
+
+#idioma::after{
+    content:'🇺🇸' ;
+}
+#idioma::before{
+    content:'🇧🇷' ;
+}
+
+
+body{
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-size:cover;
+    font-family: var(--fonte-padrão);
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    
+    
+}
+main{
+    background-color: white;
+    border: 10px;
+    padding: 20px 70px 120px 70px;
+    margin: 10px;
+    border-radius: 10px 10px 7px 7px;
+    box-shadow: 0px 0px 10px var(--cor5);
+    
+}
+
+main strong{
+    background-color: #771cffb4;
+    font-weight: bold;
+    color: black;
+    padding: 0px 2px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+nav{
+    background-color: #ffffff;
+    border: 10px;
+    padding: 20px 15px 10px 15px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 0px 0px 7px 7px;
+    text-align: right;
+    box-shadow: 5px 5px 10px var(--cor5);
+
+}
+nav > a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+    border: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+
+    
+}
+
+nav > a:hover{
+    background-color: #771cff80;
+}
+
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a516d;
+    background-color: #4F0BB3;
+    transition-duration: 0.5s;
+    border-radius: 3px
+
+}
+
+main a:hover{
+    background-color: #ffffff;
+}
+
+
+
+
+
+div.cabeça > p{
+    
+    text-align: justify;
+    max-width: 800px ;
+}
+
+
+
+
+
+
+
+div.cabeça{
+    background-image: linear-gradient(to left, var(--cor0), var(--cor1), var(--cor2), var(--cor3), var(--cor4) );
+   
+    background-size: 500% 100%;
+    animation: degrade-animado 15s   alternate infinite;
+    border: 10px;
+    padding: 60px;
+    margin: -15px 10px 10px 10px;
+    border-radius: 0px 0px 30px 30px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px var(--cor5);
+    
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }    
+}
+
+div.cabeça > p{
+    font-family: var(--fonte-padrão);
+    text-shadow: 0px 0px 5px var(--cor5);
+}
+
+img.nóTrevo{
+    border-radius: 50%;
+    max-width: 200px;
+    min-width: 50px;
+    display: block;
+    margin: auto;
+    
+}
+
+img.header{
+    width: 10%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 50%;
+    padding: 30px;
+    border: 10px;
+    margin: -25px 0px 50px 0px;
+    box-shadow: 0px 0px 10px var(--cor5);
+}
+
+
+div.lista{
+    background-image: radial-gradient(var(--cor0), var(--cor4));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.685);
+    
+}
+.lista > ol{
+    list-style-position: inside;
+    font-family: var(--fonte-padrão);
+    text-indent: 30px;
+
+}
+div.video{
+    background-image: radial-gradient(var(--cor0), var(--cor4));
+    padding: 30px 10px 30px 10px ;
+    text-align: center;
+    margin: 10px -5px 50px -5px;
+    box-shadow: 0px 0px 10px var(--cor5);
+    border-radius: 15px;
+}
+
+
+#programa{
+    background-color: #2E86B3;
+    
+}
+
+
+
+/* ######################## aqui faço o estilo do canvas */
+
+canvas {
+    border: 2px solid red;
+    display: block;
+    background-color: cadetblue;
+    margin: auto auto 10px 0px
+   
+ }
+
+#central{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    height: 50px; /* Should be removed. Only for demonstration */
+    text-align: center;
+}
+.column2 {
+    float: left;
+    width: 608px;
+    padding: 10px;
+    height: 50px; /* Should be removed. Only for demonstration */
+    text-align: center;
+}
+.column3 {
+    float: left;
+    width: 160px;
+    padding: 10px;
+    height: 50px; /* Should be removed. Only for demonstration */
+    text-align: center;
+}
+#div_container {
+    width: 1070px;
+    height:600px;
+    border: 0px solid red;
+    /* margin: 0px auto; */
+    text-align: center;
+}
+#Dialog_closeKnot{
+    /* margin: 0; */
+    position: absolute;
+}
+
+
+
+
+
+
+/* ########################################################################## */
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    border: 0px 10px 10px 10px;
+    border-radius: 30px;
+    margin: auto -1000px auto -1000px;
+    
+}
+footer > p{
+    text-align: center;
+}
+footer > p > a{
+    background-color: #2E86B3;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s; 
+    
+}
+
+footer > p > a:hover{
+    background-color: #781CFF;
+   
+}
+footer > p > a::after{
+    content: '\1F517';
+}

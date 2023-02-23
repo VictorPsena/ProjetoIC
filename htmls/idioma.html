@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script>
+      function changeLanguage1() {
+        // Armazene as strings de texto em diferentes idiomas em variáveis
+        var englishText = "Hello World!";
+        var spanishText = "¡Hola Mundo!";
+        
+        // Obtenha o elemento da página onde o texto será exibido
+        var textElement = document.getElementById("oi");
+        
+        // Verifique qual é o texto atual e mude para o outro idioma
+        if (textElement.innerHTML === englishText) {
+          textElement.innerHTML = spanishText;
+        } else {
+          textElement.innerHTML = englishText;
+        }
+
+        var titulobr = "Determinante do Nó"
+        var tituloEn = "knot determintant"
+        var titulo = document.getElementById("titulo")
+
+        if (titulo.innerHTML === tituloEn) {
+          titulo.innerHTML = titulobr;
+        } else {
+          titulo.innerHTML = tituloEn;
+        }
+
+
+      }
+    </script>
+    <style>
+        body{
+            background-image: linear-gradient( rgba(19, 19, 97, 0.726), rgb(8, 95, 120));
+        }
+        button{
+            margin: auto;
+            background-color: blueviolet;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <button onclick="changeLanguage1()">Mudar Idioma</button>
+    <h1 id="titulo">Determinante do Nó</h1>
+    <p id="oi">Hello World! </p>
+  </body>
+</html>

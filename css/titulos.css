@@ -1,0 +1,42 @@
+@charset "UTF-8";
+:root {
+    --cor0: #2E86B3;
+    --cor1: #36BBFF;
+    --cor2: #FFCD29;
+    --cor3: #4F0BB3;
+    --cor4: #781CFF;
+}
+main > article > p{
+    text-align: justify;
+    
+    padding: 15px;
+    
+}
+
+
+
+
+
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.2em;
+
+}
+
+h1{
+    color: var(--cor3);
+    background-image: linear-gradient(to left, var(--cor3), transparent);
+    border-radius: 2px;
+    text-indent: 2px;
+   
+}
+
+h2{
+    color: var(--cor4);
+    font-size: 1em;
+    margin: 5px 5px 5px 20px;
+    padding: 5px;
+    border: 5px;
+}

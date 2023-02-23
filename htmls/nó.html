@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria dos Nós</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" 
+    type="image/x-icon">
+    <link rel="stylesheet" href="../css/titulos.css">
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    
+    
+    
+</head>
+<body>
+
+
+
+    <header>
+        <nav>
+            <a href="nó.html">home</a>
+            <a href="../links/info.html">info</a>
+            <a href="../links/fale_conosco.html">fale conosco</a>
+            <button id="idioma" onclick="changeLanguage()"> / </button>
+        </nav>
+        <div class="cabeça">
+           <img src="../img/trveo220px.png" alt="NóTrevo" class="header">
+            <p id="cabeca">
+                Estudo das curvas fechadas, sem autointerseções em três dimensões.
+            </p>
+        </div>
+    </header>
+
+
+    <main>
+        <script src="../scripts/traducao.js"></script>
+        <article>
+            <h1 id="titulo1">Um pouco de história</h1>
+            <p id="text12">O início do conceito matemático de “nó” aparece nos anos de 1830 com pesquisas de <strong>Carl Friedrich Gauss</strong> (1777-1855). Seu interesse, na época, era
+                aplicar esse conceito na área de eletrodinâmica. Nesse mesmo século, décadas
+                depois, outro grande pesquisador, <strong>William Thomson</strong> (Lord Kelvin) (1824-1907),
+                se interessou pelo assunto, pois acreditava que os “nós” seriam a chave para a
+                compreensão das substâncias químicas, que, de acordo com suas crenças, seriam
+                descritas pelas formas dos nós. Apesar de tal crença não condizer com a verdade,
+                a <strong>Teoria dos Nós</strong> continuou a ser matematicamente estudada ao longo dos anos
+                e aplicações foram sendo descobertas em outras áreas do conhecimento como:
+                na Física, no estudo do DNA na Biologia Molecular e no estudo de estruturas
+                tridimensionais de moléculas na Química, um exemplo disso é que nas últimas
+                décadas do século XX, os cientistas se interessaram em estudar nós físicos para
+                entender fenômenos de nó em DNA e outros polímeros. 
+                <br>
+                A teoria do nó pode
+                ser usada para determinar se uma molécula é quiral (o conceito de quiral é
+                associado a um átomo de carbono ligado a quatro substituintes diferentes, dis
+                postos segundo os vértices de um tetraedro. A mudança de posição de dois dos
+                grupos substituintes conduz a uma simetria da molécula) ou não. Os emaranhados, cordas com ambas as extremidades fixadas no lugar, foram eficazmente
+                utilizados no estudo da ação da topoisomerase no ADN (a topoisomerase ou
+                DNA topoisomerase é uma enzima que desempenha importante papel nos processos de replicação e empacotamento de DNA). A teoria do nó pode ser crucial
+                na construção de computadores quânticos, através do modelos de computação
+                quântica topológicas</p>
+                <!-- <img class="nóTrevo" src="Imgs/500NóTrevo.png" alt="Nó NóTrevo"> -->
+    
+        </article>
+        <article>
+            <h2>Vídeo explicativo</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YlP3zVQlVN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        
+        <article>
+          <h1 id="titulo2">Determinante do Nó</h1>
+          <p id="determinante1">
+            O <strong>determinante</strong> de um nó é um número real não negativo
+            associado ao nó. Este número é um invariante do nó, isto é, quaisquer dois
+            nós equivalentes possuem o mesmo determinante. Desse modo, dois nós com
+            determinantes diferentes não são equivalentes.
+          </p>
+          <h2 id="titulo21">Processo para obter o determinante.</h2>
+          <p id="determinante11">
+            Calculamos o determinante de um nó de forma algorítmica, como veremos
+            a seguir.
+            <div class="lista">
+            <ol id="determinante12">
+                <li>Para o primeiro passo temos que para cada arco associar uma variável e
+                    para cada cruzamento associamos uma equação da forma;
+                    <math display ="block">
+                        <mstyle>
+                            <msub>
+                                <mi>a</mi>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                               <mi>b</mi> 
+                            </msub>
+                            <mo>-</mo>
+                            <msub>
+                                <mi>2d</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>0</mi>
+                            </msub>
+                        </mstyle>
+                    </math>
+            
+                </li>
+                
+                <li>
+                    Coloque uma variável qualquer da equação que obtemos a cima igual a zero;
+                </li>
+                <li>
+                    Descarte uma equação qualquer;
+                    E por fim.
+                </li>
+                <li>
+                    Ficará então determinado um sistema de 'n − 1' equações  e 'n − 1' variáveis,
+                    ∀n ∈ N. Calculamos o modulo da matriz formada pelos coeficientes das
+                    equações do sistema linear obtido.
+                    <br>
+                    Esse será o nosso Determinante do <strong>Nó</strong>.
+                </li>
+
+            </ol>
+            </div>
+          </p>
+        </article>
+
+
+
+        <article>
+            <h1 id="titulo22">Polinômio de Alexander</h1>
+            <p id="poli1">O calculo do polinômio de Alexander é semelhante ao do Determinante, como veremos a seguir.</p>
+            <div class="lista">
+                <ol id="poli2">
+                    <li>
+                        Escolha uma orientação para o Nó 
+                        <br>
+                        <strong>Observação:</strong> 'd' deve ser identificado como a variável que passa superiormente na região do cruzamento; para a escolha de 'a' e 'b' na equação, procedemos da seguinte forma: usando a orientação do trecho superior do nó, no cruzamente, 'a' deve ser identificado como a variável associada à direita de 'd', e consequentemente, 'b' deve ser identificado como a variável     à esquerda de 'd'
+
+                        <br>
+
+                        Veja a próxima imagem:
+                        <br>
+                        <img src="../img/cruzamento.png" alt="" width="300px" height="300px" style=" border-radius: 33px; margin: 30px  200px 20px 300px; box-shadow: 10px 10px 20px;">
+                    </li>
+
+                    <li>
+                        Associe a cada arco uma variável; <math display = "block"> <mstyle><msub><mi>(a, b, d, ...)</mi></msub></mstyle></math> A cada cruzamento escrevemos a equação da forma;
+                        <math display = "block"> <mstyle><msub><mi>b - ta - (1-t)d = 0</mi></msub></mstyle></math> ou 
+                        <math display = "block"> <mstyle><msub><mi>b - ta = (1-t)d</mi></msub></mstyle></math>
+                    </li>
+                    <li>
+                        Em seguida, coloque uma variável qualquer igual a zero.
+                    </li>
+
+                    <li>
+                        Descarte qualquer uma das equações.
+                    </li>
+
+                    <li>
+                        Montamos um sistema e calculamos o determinante da matriz desse sistema, a qual será um <math display="in-line"> <mstyle><msub><mi>δ(t).</mi></msub></mstyle></math>
+                    </li>
+
+                    <li>
+                        Multiplicamos <math display="in-line"> <mstyle><msub><mi>δ(t)</mi></msub></mstyle></math> por <math display="in-line"> <mstyle><msub><mi>±t^j </mi></msub></mstyle></math> com o intuito de obter
+                        <math display="in-line"> <mstyle><msub><mi>Δ(t)</mi></msub></mstyle></math>, tal que,  <math display="in-line"> <mstyle><msub><mi>Δ(t) = Δ(t^-1) e Δ(1) = 1.</mi></msub></mstyle></math>
+                    </li>
+
+
+  
+                </ol>
+                <br>
+
+                <p id="poli3">Para mais imformações e exemplos, <a href="../artigo/">Clique aqui</a></p>
+                
+            </div>
+        </article>
+        <br>
+        <article>
+            <h1 id="ap">Aplicativo para calcular os Invariantes.</h1>
+            <p id="ap1">Agora veremos um aplicativo que foi criado para calcular ambos os invariantes, o Determinante e o Polinômio de Alexander. No vídeo a baixo podemos acessar um tutorial de como utilizar a API criada,</p>
+            
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YlP3zVQlVN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+               <p><a href="PyScriptPolyAlex.html" target="_blank">Clique Aqui</a> para acessar a API.</p> 
+            
+            
+        </article>
+
+
+
+    </main>
+    <button id="voltar-topo" onclick="voltarAoTopo()">
+        Voltar ao Topo
+    </button>
+    <script>
+        // Função para mostrar ou ocultar o botão
+        function mostrarBotao() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("voltar-topo").style.display = "block";
+          } else {
+            document.getElementById("voltar-topo").style.display = "none";
+          }
+        }
+  
+        // Evento de rolagem da página
+        window.onscroll = function() {
+          mostrarBotao();
+        };
+  
+        // Função para voltar ao topo da página
+        function voltarAoTopo() {
+          document.body.scrollTop = 0; // Para navegadores Safari
+          document.documentElement.scrollTop = 0; // Para outros navegadores
+        }
+      </script>
+  
+
+    <footer>
+        <p>Site criado por <a href="http://lattes.cnpq.br/1546826300126561" target="_blank">Victor Patrick Sena Barbosa</a> em uma Iniciação Científica</p>
+    </footer>
+
+
+</body>
+</html>
