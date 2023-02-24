@@ -42,6 +42,22 @@ function changeLanguage() {
     textElement.innerHTML = IntroducaoEnglish;
   }
 
+  var videoUs = "Explanatory video. "
+  var videoBr = "Vídeo explicativo. "
+  var textElement = document.getElementById("video");
+  if (textElement.innerHTML === videoUs) {
+    textElement.innerHTML = videoBr;
+  } else {
+    textElement.innerHTML = videoUs;
+  }
+
+
+
+
+
+
+
+
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   var titulo2English = "Knot determinant."
   var titulo2Brasil = "Determinante do Nó. "
